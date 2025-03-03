@@ -1976,7 +1976,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4390,
             "candidate": 152,
             "affected_candidate": 152,
-            "global_multiplier": -0.1
+            "global_multiplier": -0.135
         }
     },
     {
@@ -2027,6 +2027,26 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 152,
             "affected_candidate": 152,
             "global_multiplier": -0.045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 44780,
+        "fields": {
+            "answer": 4478,
+            "candidate": 152,
+            "affected_candidate": 152,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 44790,
+        "fields": {
+            "answer": 4479,
+            "candidate": 152,
+            "affected_candidate": 152,
+            "global_multiplier": -0.01
         }
     },
     {
@@ -2126,7 +2146,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4482,
             "candidate": 152,
             "affected_candidate": 155,
-            "global_multiplier": -0.25
+            "global_multiplier": -0.2
         }
     },
     {
@@ -2356,7 +2376,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 15516,
             "candidate": 152,
             "affected_candidate": 152,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.0085
         }
     },
     {
@@ -2526,7 +2546,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4489,
             "candidate": 152,
             "affected_candidate": 152,
-            "global_multiplier": -0.15
+            "global_multiplier": -0.25
         }
     },
     {
@@ -2616,7 +2636,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4496,
             "candidate": 152,
             "affected_candidate": 155,
-            "global_multiplier": -0.1
+            "global_multiplier": -0.01
         }
     },
     {
@@ -2626,7 +2646,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4480,
             "candidate": 152,
             "affected_candidate": 152,
-            "global_multiplier": 0.005
+            "global_multiplier": -0.0075
         }
     },
     {
@@ -2726,7 +2746,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 4481,
             "candidate": 152,
             "affected_candidate": 154,
-            "global_multiplier": 0.025
+            "global_multiplier": 0.04
         }
     },
     {
@@ -5642,7 +5662,7 @@ if (SupremacistPath == true && ans == 4405) {
   campaignTrail_temp.questions_json[12] = tunnel(55709);
   campaignTrail_temp.questions_json[13] = tunnel(55716);
   campaignTrail_temp.questions_json[14] = tunnel(55723);
-  ModeratePath == false;
+  ModeratePath = false;
 }
 if (ans == 55700) {
   switcheroo6();
@@ -5666,7 +5686,7 @@ if (ModeratePath == true && ans == 4405) {
   campaignTrail_temp.questions_json[15] = tunnel(55807);
   campaignTrail_temp.questions_json[16] = tunnel(55816);
   campaignTrail_temp.questions_json[17] = tunnel(55823);
-  SupremacistPath == false;
+  SupremacistPath = false;
 }
 if (ans == 55767 || ans == 55769 || ans == 55771 ) {
   switcheroo5();
@@ -5835,7 +5855,7 @@ ctsAchievement("Watergate doesn't bother me");
     setMusic("https://files.catbox.moe/f37ss4.mp3")
     }
 // progressive path election loss
-if (e.player_answers.includes(4379) && out == loss) {
+if (e.player_answers.includes(4379) && aa[0].candidate !== 152) {
     e.pages.push(`<h2>Four years on...</h2><p>Lurleen: Georgie, you did say you'd follow me to the end?<br><br>George: That's not the point! It's that I wish what I had to go through on no one else! Especially you!<br><br>Lurleen: Listen, you already told me about my diagnosis, you already told me about the Klan, you already told me about how a woman is but a bait to all those bastards...<br><br>George: And you already told me you wouldn't listen!<br><br>Lurleen: Yes I did! Because it's you that has to listen now Georgie! I'm not your trophy for you to pamper on! I know what those bastards you try to scare me with do to Alabama and I just won't stand idly by anymore!<br><br>George: ... So. You're going through with this?<br><br>Lurleen: I will. With or without you. Though... it’d pain my heart to go without you.<br><br>George: Alright. I'll go with you. Just, be ready to feel it was a huge waste of time Lily.<br><br>Lurleen: I already wasted enough of my time before. With the time I have left, I must do the best with it, for those that will see it to the end.<br><br>George: Lily...<br><br>Lurleen: Don't get emotional on me now. We have a state to save!</p>`);
     e.executable.push([0, (() => { e.image = 'https://i.imgur.com/CYIY7FN.png'; })]);
     }
